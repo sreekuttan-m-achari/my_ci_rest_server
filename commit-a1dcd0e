@@ -1,0 +1,31 @@
+commit a1dcd0eb667926ab82ae274d452a8632b9101c5c
+Author: sreekuttan-m-achari <sreekuttan.m.achari@gmail.com>
+Date:   Mon Mar 16 17:24:11 2015 +0530
+
+    Revert "database created and set connection string to localhost"
+    
+    This reverts commit 23212dd23ad8eb0f0ad8e2dced1e3bd98292b5bc.
+
+diff --git a/application/config/database.php b/application/config/database.php
+index 5996f28..6620167 100644
+--- a/application/config/database.php
++++ b/application/config/database.php
+@@ -48,17 +48,10 @@
+ $active_group = 'default';
+ $active_record = TRUE;
+ 
+-/*$db['default']['hostname'] = 'mysqlsdb.co8hm2var4k9.eu-west-1.rds.amazonaws.com';
++$db['default']['hostname'] = 'mysqlsdb.co8hm2var4k9.eu-west-1.rds.amazonaws.com';
+ $db['default']['username'] = 'dep3jwdttk2';
+ $db['default']['password'] = '8KS7HIU7lt09';
+ $db['default']['database'] = 'dep3jwdttk2';
+-*/
+-
+-$db['default']['hostname'] = 'localhost';
+-$db['default']['username'] = 'root';
+-$db['default']['password'] = '';
+-$db['default']['database'] = 'my_rest_server';
+-
+ $db['default']['dbdriver'] = 'mysql';
+ $db['default']['dbprefix'] = '';
+ $db['default']['pconnect'] = TRUE;
